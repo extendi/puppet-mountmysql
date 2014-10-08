@@ -2,8 +2,8 @@ class mountmysql {
 
   file { '/mnt/mysql':
     ensure => "directory",
-    owner => 'ubuntu',
-    group => 'ubuntu',
+    owner => 'mysql',
+    group => 'mysql',
   }
 
   mount { '/mnt/mysql':
